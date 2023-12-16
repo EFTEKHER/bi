@@ -1280,6 +1280,14 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.\[k\:\FFFD\] {
+  k: �;
+}
+
+.\[yw0\:\FFFD\FFFD\FFFD\1CW\FFFD\] {
+  yw0: ���W�;
+}
+
 .hover\:border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));

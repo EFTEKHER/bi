@@ -3,4 +3,4 @@ deployment:
  tasks:
  - export DEPLOYPATH=/home/binaryai/public_html/
  - /bin/cp * $DEPLOYPATH
- 
+ S

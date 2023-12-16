@@ -1,4 +1,5 @@
 ---
+
 deployment:
  tasks:
  - export DEPLOYPATH=/home/binaryai/public_html/

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Binary2AI</title>
+    <link rel="icon" href="/assets/logo.png" type="image/icon type">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-blue-950">
+    <!-- nav class start here  -->
+    <nav class="p-5 bg-blue-950 shadow md:flex md:items-center md:justify-between sticky min-w-full">
+        <div class="flex justify-between items-center">
+            <span class="text-2xl font-[Poppins] text-gray-500">
+                <img class="h-10 inline" src="./assets/logo.png" alt="Binary2AI">Binary2AI
+            </span>
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="grid" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <ul
+            class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-blue-950 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200">
+            <li class="mx-4 my-6 md:my-0"><a href="#home"
+                    class="text-xl  text-gray-300  hover:text-cyan-500 duration-500">HOME</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#"
+                    class="text-xl  text-gray-300  hover:text-cyan-500 duration-500">SERVICE</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#"
+                    class="text-xl  text-gray-300  hover:text-cyan-500 duration-500">ABOUT</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#"
+                    class="text-xl  text-gray-300  hover:text-cyan-500 duration-500">CONTACT</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#"
+                    class="text-xl  text-gray-300  hover:text-cyan-500 duration-500">BLOG'S</a></li>
+            <button  class="bg-gray-500 text-white font-[Poppins] duration-500 px-6 py-2 hover:bg-gray-800 rounded"
+                onclick=goToPage()>Get started</button>
+
+        </ul>
+    </nav>
+    <section class="bg-gray-900 text-white" id="home">
+        <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+          <div class="mx-auto max-w-3xl text-center">
+            <h1
+              class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+            >
+              Binary2AI
+      
+              <span class="sm:block text-purple-500"> Transforming Bits into Intelligence </span>
+              <strong class="font-bold text-xl text-pink-700 sm:block" >
+                We are Providing <span id="auto-type"> </span>
+              </strong>
+            </h1>
+      
+            <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+                Binary2AI aims to provide cutting-edge artificial intelligence support to businesses, helping them leverage the power of AI to drive growth and innovation.
+                We offer a range of services including AI consulting, AI solution development, AI integration, and ongoing AI support.
+
+            </p>
+      
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                href="/get-started"
+              >
+               Get Information 
+              </a>
+      
+              <!-- <a
+                class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                href="/about"
+              >
+                Learn More
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    <header class="w-full h-auto " id="gallery">
+
+        <img class="w-full  hidden md:block" src="assets/Home1.png" alt="">
+        <img id="img1" class="w-full static my-auto py-auto  md:hidden" src="assets/home2.png" alt="">
+       
+    </header>
+<div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10 bg-black text-white">
+    <div class="w-full h-auto flex flex-wrap flex-col items-center m-auto p-auto ">
+        <p class="text-white font-semibold text-5xl">Our Services</p>
+        
+        <div class="w-full flex flex-wrap flex-col items-center"><div class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12">
+        <div class="w-full flex flex-wrap justify-evenly ">
+           
+
+        </div>
+        
+        
+    
+    </div>
+
+
+
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul')
+            let x = document.querySelector("#img1")
+            console.log('Hi ', x);
+
+            e.name === 'grid' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "grid", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+
+        }
+        function goToPage() {
+  location.href = "#home";
+}
+
+
+const typed = new Typed('#auto-type', {
+  strings: ["Machine Learning Services","Artificial Intelligence Services","Deep Learning Services","Data Analysis Services","MERN stack Services","Web design Services","Flutter App Services","Django Services" ],
+  
+  typeSpeed:150,
+    backSpeed:150, 
+    loop:true
+});
+    </script>
+</body>
+
+</html>

@@ -21,6 +21,8 @@
 
   <link rel="stylesheet" href="style.css">
   <title>Binary2AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+
   <link rel="icon" href="/assets/favicon.ico" type="image/icon type">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -31,7 +33,7 @@
 
 <body class="bg-blue-950">
   <!-- nav class start here  -->
-  <nav class="p-5 bg-blue-950 shadow md:flex md:items-center md:justify-between sticky min-w-full">
+  <nav class="p-5 bg-violet-800 shadow md:flex md:items-center md:justify-between sticky min-w-full">
     <div class="flex justify-between items-center">
       <span class="text-2xl font-[Poppins] text-gray-500">
         <img class="h-10 inline" src="./assets/logo.png" alt="Binary2AI">Binary2AI
@@ -66,7 +68,7 @@
 
     </ul>
   </nav>
-  <section class="bg-violet-900 text-white flex flex-wrap" id="home">
+  <section class="bg-violet-500 text-white flex flex-wrap" id="home">
     <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
       <div class="mx-auto max-w-3xl text-center">
         <h1
@@ -256,55 +258,57 @@
     </div>
   </div>
 
-  <section class="bg-black text-white" id="about">
+  <section class="bg-blue-950 text-white" id="about">
     <div class="mx-auto max-w-screen-xl px-4 py-20 lg:flex lg:h-screen lg:items-start justify-center">
-      <div class="mx-auto max-w-xl text-center">
-        <h1 class="text-3xl font-bold sm:text-3xl">
-          About
-          <strong class="font-bold text-red-700 sm:block"> Us </strong>
+      <div class="mx-auto max-w-3xl text-center"> <!-- Increased max-w-3xl for wider service blocks -->
+        <h1 class="text-4xl font-bold sm:text-5xl mb-6">
+          <span class="border-b-4 border-red-700">About Us</span>
         </h1>
-
-        <article class="mt-4 sm:text-xl/relaxed">
-
-
-          Welcome to Binary2AI, your trusted partner in digital transformation. We are a dynamic team of tech
-          enthusiasts committed to helping businesses navigate the digital landscape with our comprehensive range of
-          services.
-
-
-
-        </article>
-        <article class="mt-1 text-sm">
-
-
-          Flutter Development: We build beautiful and functional mobile applications using Flutter, a flexible,
-          efficient, and open-source framework. Our Flutter development services are designed to deliver high-quality,
-          cross-platform applications that offer a delightful user experience.
-          <br>
-
-          Machine Learning & Deep Learning: Our team of experts harnesses the power of Machine Learning and Deep
-          Learning to create AI models that can learn and improve from experience. We help businesses leverage these
-          technologies to automate processes, gain insights from data, and make more informed decisions.
-          <br>
-          Full Stack Web Development: We provide end-to-end web development services, covering everything from front-end
-          development to back-end programming. Our full-stack developers are skilled in a variety of technologies and
-          frameworks, ensuring we can build robust, scalable, and secure web applications.
-          <br>
-
-          Data Analysis: We help businesses unlock the value of their data. Our data analysis services include data
-          collection, processing, modeling, and interpretation. We turn raw data into actionable insights that can drive
-          business growth and efficiency.
-          <br>
-          At Binary2AI, we believe in the power of technology to transform businesses. We are committed to delivering
-          solutions that are tailored to your business needs, helping you achieve your goals in the digital age. Partner
-          with us and let's embark on this exciting journey together.
-        </article>
-
-
+  
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Flutter Development -->
+          <div class="service-block bg-gray-800 rounded-lg p-6 border border-gray-700 transition-colors duration-300 ease-in-out hover:bg-red-700 hover:text-white">
+            <h2 class="text-lg font-bold mb-2">Flutter Development</h2>
+            <p class="text-sm">
+              We specialize in building beautiful and functional mobile applications using Flutter, a flexible, efficient, and open-source framework. Our services are dedicated to delivering high-quality, cross-platform applications that offer a delightful user experience.
+            </p>
+          </div>
+  
+          <!-- Machine Learning & Deep Learning -->
+          <div class="service-block bg-gray-800 rounded-lg p-6 border border-gray-700 transition-colors duration-300 ease-in-out hover:bg-blue-700 hover:text-white">
+            <h2 class="text-lg font-bold mb-2">Machine Learning & Deep Learning</h2>
+            <p class="text-sm">
+              Our team leverages the power of Machine Learning and Deep Learning to create AI models that continually learn and improve. We assist businesses in automating processes, extracting insights from data, and making informed decisions.
+            </p>
+          </div>
+  
+          <!-- Full Stack Web Development -->
+          <div class="service-block bg-gray-800 rounded-lg p-6 border border-gray-700 transition-colors duration-300 ease-in-out hover:bg-green-700 hover:text-white">
+            <h2 class="text-lg font-bold mb-2">Full Stack Web Development</h2>
+            <p class="text-sm">
+              Offering comprehensive web development services, covering front-end to back-end programming. Our developers specialize in diverse technologies and frameworks, ensuring the creation of robust, scalable, and secure web applications.
+            </p>
+          </div>
+  
+          <!-- Data Analysis -->
+          <div class="service-block bg-gray-800 rounded-lg p-6 border border-gray-700 transition-colors duration-300 ease-in-out hover:bg-yellow-700 hover:text-white">
+            <h2 class="text-lg font-bold mb-2">Data Analysis</h2>
+            <p class="text-sm">
+              Unlock the potential of your data through our services, encompassing data collection, processing, modeling, and interpretation. We transform raw data into actionable insights, driving business growth and efficiency.
+            </p>
+          </div>
+        </div>
+  
+        <p class="mt-10 text-sm">
+          At Binary2AI, we believe in the transformative power of technology for businesses. Committed to tailoring solutions to your needs, we help achieve your goals in the digital age. Let's embark on this exciting journey together.
+        </p>
       </div>
     </div>
   </section>
-
+  
+  
+  
+  
   <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10 bg-black text-white" id="staff">
     <div class="w-full h-auto flex flex-wrap flex-col items-center m-auto p-auto ">
       <p class="text-white font-semibold text-3xl md:text-5xl ">Our Staffs</p>
